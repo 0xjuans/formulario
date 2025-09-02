@@ -61,11 +61,19 @@ formulario/
 │   ├── css/
 │   │   ├── styles.css      # Estilos principales
 │   │   └── styles(1).css   # Archivo de respaldo
-│   └── js/
-│       ├── script.js       # Lógica JavaScript principal
-│       └── script(1).js    # Archivo de respaldo
+│   ├── js/
+│   │   ├── script.js       # Lógica JavaScript principal
+│   │   └── script(1).js    # Archivo de respaldo
+│   └── img/
+│       └── iPad-PRO-11-127.0.0.1.png  # Captura de pantalla del proyecto
 └── README.md               # Este archivo
 ```
+
+## 📸 Captura de Pantalla
+
+![Formulario de Registro](assets/img/iPad-PRO-11-127.0.0.1.png)
+
+*Vista del formulario de registro en funcionamiento*
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
