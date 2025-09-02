@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1><i class="fas fa-user-plus"></i> Registro</h1>
+                <p>Crea tu cuenta con nosotros</p>
+            </div>
+            
+            <form id="registrationForm" class="glass-form">
+                <!-- Campo Nombre -->
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="nombre">Nombre completo</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="error-message" id="nombre-error"></div>
+                </div>
+
+                <!-- Campo Email -->
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Correo electrónico</label>
+                        <span class="focus-border"></span>
+                        <span class="validation-icon" id="email-validation"></span>
+                    </div>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+
+                <!-- Campo Contraseña -->
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Contraseña</label>
+                        <span class="focus-border"></span>
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength" id="passwordStrength">
+                        <div class="strength-meter">
+                            <div class="strength-fill" id="strengthFill"></div>
+                        </div>
+                        <div class="strength-text" id="strengthText">Ingresa tu contraseña</div>
+                    </div>
+                    <div class="password-requirements">
+                        <div class="requirement" id="length">
+                            <i class="fas fa-times"></i>
+                            <span>Mínimo 8 caracteres</span>
+                        </div>
+                        <div class="requirement" id="uppercase">
+                            <i class="fas fa-times"></i>
+                            <span>Una letra mayúscula</span>
+                        </div>
+                        <div class="requirement" id="lowercase">
+                            <i class="fas fa-times"></i>
+                            <span>Una letra minúscula</span>
+                        </div>
+                        <div class="requirement" id="number">
+                            <i class="fas fa-times"></i>
+                            <span>Un número</span>
+                        </div>
+                    </div>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+
+                <!-- Botón Submit -->
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">Crear cuenta</span>
+                    <i class="fas fa-arrow-right btn-icon"></i>
+                </button>
+            </form>
+
+            <div class="form-footer">
+                <p>¿Ya tienes cuenta? <a href="#" class="login-link">Inicia sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
